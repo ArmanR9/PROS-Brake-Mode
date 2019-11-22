@@ -105,7 +105,7 @@ void opcontrol() {
 	lcd::print(2, "Current Brake Mode %d", mtr.get_brake_mode());
 	lcd::print(6, "ENUM Values: COAST: %d BRAKE: %d HOLD: %d", MOTOR_BRAKE_COAST, MOTOR_BRAKE_BRAKE, MOTOR_BRAKE_HOLD);
 
-	blocking_f(DIGITAL_A);
+	input_get(DIGITAL_RIGHT);
 	//await user input
 
 	brake_move();
@@ -118,5 +118,5 @@ void opcontrol() {
 
 	print_message("Test code finished");
 
-	blocking_f(DIGITAL_RIGHT);
+	input_get(DIGITAL_RIGHT);
 	}

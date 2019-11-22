@@ -7,7 +7,7 @@ void brake_move() {
 
   lcd::print(0, "A. MOVE Function");
 	lcd::print(1, "Press Right to continue");
-	blocking_f(DIGITAL_RIGHT);
+	input_get(DIGITAL_RIGHT);
   lcd::clear_line(1);
 
 	lcd::print(3, "A. Brake Mode: HOLD");
@@ -17,7 +17,7 @@ void brake_move() {
 	mtr.move(0);
 
   lcd::print(1, "Press Right to continue");
-	blocking_f(DIGITAL_RIGHT);
+	input_get(DIGITAL_RIGHT);
   lcd::clear_line(1);
 
 
@@ -28,7 +28,7 @@ void brake_move() {
 	mtr.move(0);
 
   lcd::print(1, "Press Right to continue");
-	blocking_f(DIGITAL_RIGHT);
+	input_get(DIGITAL_RIGHT);
   lcd::clear_line(1);
 
 
@@ -39,7 +39,7 @@ void brake_move() {
 	mtr = 0;
 
   lcd::print(1, "Press Right to continue:");
-	blocking_f(DIGITAL_RIGHT);
+	input_get(DIGITAL_RIGHT);
   lcd::clear_line(1);
 }
 
@@ -49,7 +49,7 @@ void brake_move_voltage() {
 
   lcd::print(0, "B. MOVE_VOLTAGE FUNCTION");
 	lcd::print(1, "Press Right to Continue");
-	blocking_f(DIGITAL_RIGHT);
+	input_get(DIGITAL_RIGHT);
   lcd::clear_line(1);
 
 
@@ -60,7 +60,7 @@ void brake_move_voltage() {
   mtr.move_voltage(0);
 
   lcd::print(1, "Press Right to Continue");
-	blocking_f(DIGITAL_RIGHT);
+	input_get(DIGITAL_RIGHT);
   lcd::clear_line(1);
 
 
@@ -71,7 +71,7 @@ void brake_move_voltage() {
 	mtr.move_voltage(0);
 
   lcd::print(1, "Press Right to Continue");
-	blocking_f(DIGITAL_RIGHT);
+	input_get(DIGITAL_RIGHT);
   lcd::clear_line(1);
 
 
@@ -82,7 +82,7 @@ void brake_move_voltage() {
   mtr.move_voltage(0);
 
   lcd::print(1, "Press Right to Continue: Move Voltage test done");
-	blocking_f(DIGITAL_RIGHT);
+	input_get(DIGITAL_RIGHT);
   lcd::clear_line(1);
 }
 
@@ -91,7 +91,7 @@ void brake_move_relative() {
 	clear_scr();
 	lcd::print(0, "C. MOVE RELATIVE / Encoder Position function");
 	lcd::print(1, "Press Right to continue");
-	blocking_f(DIGITAL_RIGHT);
+	input_get(DIGITAL_RIGHT);
   lcd::clear_line(1);
 
 
@@ -100,14 +100,14 @@ void brake_move_relative() {
   mtr.move_relative(300, 100);
 
   lcd::print(1, "Press Right to continue");
-	blocking_f(DIGITAL_RIGHT);
+	input_get(DIGITAL_RIGHT);
   lcd::clear_line(1);
 
 	lcd::print(4, "C. HOLD with no voltage");
 	mtr.move(0);
 
   lcd::print(1, "Press Right to continue");
-	blocking_f(DIGITAL_RIGHT);
+	input_get(DIGITAL_RIGHT);
   lcd::clear_line(1);
 
 	lcd::print(4, "C. Brake Mode: BRAKE");
@@ -115,7 +115,7 @@ void brake_move_relative() {
   mtr.move_relative(300, 100);
 
   lcd::print(1, "Press Right to continue");
-	blocking_f(DIGITAL_RIGHT);
+	input_get(DIGITAL_RIGHT);
   lcd::clear_line(1);
 
 
@@ -123,7 +123,7 @@ void brake_move_relative() {
 	mtr.move(0);
 
   lcd::print(1, "Press Right to continue");
-	blocking_f(DIGITAL_RIGHT);
+	input_get(DIGITAL_RIGHT);
   lcd::clear_line(1);
 
 
@@ -132,13 +132,13 @@ void brake_move_relative() {
   mtr.move_relative(300, 100);
 
   lcd::print(1, "Press Right to continue");
-	blocking_f(DIGITAL_RIGHT);
+	input_get(DIGITAL_RIGHT);
   lcd::clear_line(1);
 
 
 	lcd::print(6, "C. Brake Mode: COAST + no voltage");
 	mtr.move(0);
-  blocking_f(DIGITAL_RIGHT);
+  input_get(DIGITAL_RIGHT);
 
 
 }
@@ -150,7 +150,7 @@ void brake_move_velocity() {
 
 	lcd::print(0, "D. MOVE VELOCITY function");
 	lcd::print(1, "Press Right to continue");
-	blocking_f(DIGITAL_RIGHT);
+	input_get(DIGITAL_RIGHT);
   lcd::clear_line(1);
 
 	lcd::print(3, "D. Brake Mode: HOLD");
@@ -161,7 +161,7 @@ void brake_move_velocity() {
   lcd::print(4, "D. Brake Mode: HOLD + Move_Velocity at 0");
 
   lcd::print(1, "Press Right to continue");
-	blocking_f(DIGITAL_RIGHT);
+	input_get(DIGITAL_RIGHT);
   lcd::clear_line(1);
   lcd::clear_line(4);
 
@@ -170,7 +170,7 @@ void brake_move_velocity() {
 	mtr.move(0);
 
   lcd::print(1, "Press Right to continue");
-	blocking_f(DIGITAL_RIGHT);
+	input_get(DIGITAL_RIGHT);
   lcd::clear_line(1);
   lcd::clear_line(5);
 
@@ -183,7 +183,7 @@ void brake_move_velocity() {
 
 
   lcd::print(1, "Press Right to continue");
-  blocking_f(DIGITAL_RIGHT);
+  input_get(DIGITAL_RIGHT);
   lcd::clear_line(1);
   lcd::clear_line(4);
 
@@ -192,7 +192,7 @@ void brake_move_velocity() {
 	mtr.move(0);
 
   lcd::print(1, "Press Right to continue");
-	blocking_f(DIGITAL_RIGHT);
+	input_get(DIGITAL_RIGHT);
   lcd::clear_line(1);
   lcd::clear_line(6);
 
@@ -207,7 +207,7 @@ void brake_move_velocity() {
 
 
   lcd::print(1, "Press Right to continue");
-	blocking_f(DIGITAL_RIGHT);
+	input_get(DIGITAL_RIGHT);
   lcd::clear_line(1);
 
 
@@ -216,7 +216,7 @@ void brake_move_velocity() {
 	mtr.move(0);
 
   lcd::print(1, "Press Right to continue");
-	blocking_f(DIGITAL_RIGHT);
+	input_get(DIGITAL_RIGHT);
   lcd::clear_line(1);
   lcd::clear_line(6);
   lcd::clear_line(7);
