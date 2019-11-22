@@ -1,7 +1,8 @@
 # PROS-Brake-Mode
+
 Simple Project to test the different brake modes of the V5 motor in this project.
 
-See how `BRAKE_HOLD`, `BRAKE_BRAKE`, and `BRAKE_COAST` with different motor movement methods like
+See how `BRAKE_HOLD`, `BRAKE_BRAKE`, and `BRAKE_COAST`work with different motor movement methods like
 `move_voltage()` `move_velocity()` and `move_relative()`
 
 
