@@ -25,7 +25,3 @@ Install the repositiory as a zip and open it up as a project in the PROS Editor/
 OR
 Use git to clone the repository into your working directory: https://github.com/ArmanR9/PROS-Brake-Mode.git 
 
-
-**Installing as a template**:
-//Placeholder
-
